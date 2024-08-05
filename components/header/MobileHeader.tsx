@@ -12,7 +12,7 @@ const MobileHeader = () => {
   return (
     <div>
       <Sheet>
-        <SheetTrigger>
+        <SheetTrigger asChild>
           <Button variant="ghost" size="icon" className=" -ml-2 md:hidden">
             <Menu />
           </Button>

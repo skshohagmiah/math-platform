@@ -28,6 +28,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
 interface Chapter {
   id: number;
@@ -88,6 +89,7 @@ const Curriculum: FC<CurriculumProps> = ({ chapters }) => {
               key={chapter.id}
               className="overflow-hidden transition-all hover:shadow-lg cursor-pointer"
             >
+              <Link href={`/${chapter.name}`}>
               <CardHeader className="space-y-1">
                 <div className="flex items-center space-x-2">
                   <div className="p-2 bg-green-500 rounded-full">
@@ -109,6 +111,7 @@ const Curriculum: FC<CurriculumProps> = ({ chapters }) => {
                   {chapter.difficulty}
                 </Badge>
               </CardContent>
+              </Link>
             </Card>
           );
         })}

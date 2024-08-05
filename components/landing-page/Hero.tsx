@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 place-content-center">
           <div className=" mb-10 lg:mb-0 text-center md:text-left">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              Unleash Your Math Potential
+              Unleash Your <span className='text-green-500'>Math</span> Potential
             </h1>
             <p className="text-xl mb-8 opacity-90">
               Embark on an exciting journey of interactive math learning. 
