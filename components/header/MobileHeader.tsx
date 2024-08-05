@@ -47,6 +47,9 @@ const MobileHeader = () => {
                 <PersonStanding />
                 Profile
               </Link>
+              <Button className="" variant={'destructive'}>
+                Logout
+              </Button>
             </nav>
         </SheetContent>
       </Sheet>

@@ -3,7 +3,16 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { Bell, Book, Crown, Diamond, Group, Menu, Power, Text } from "lucide-react";
+import {
+  Bell,
+  Book,
+  Crown,
+  Diamond,
+  Group,
+  Menu,
+  Power,
+  Text,
+} from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -49,19 +58,22 @@ export default function Header() {
           <div className="flex items-center space-x-2 md:space-x-4">
             <Badge
               variant="secondary"
-              className="hidden md:flex items-center py-2 px-4 text-base font-semibold "
+              className="items-center flex gap-1 md:py-2 md:px-4 text-base font-semibold "
             >
-              <Crown className="w-6 h-6 mr-1 text-blue-500" />
-              Level 5
+              <Crown className="w-6 h-6  text-blue-500" />
+              <span className="hidden sm:block">Level</span> 5
             </Badge>
 
-            <Button variant="secondary"  className="relative rounded-full md:text-xl">
+            <Badge
+              variant={"secondary"}
+              className="flex items-center gap-1 text-base  md:py-1.5 md:px-3"
+            >
               💎
-              <Badge variant={'outline'} className="absolute top-0 right-0 border-none">3</Badge>
-            </Button>
+              <span>3</span>
+            </Badge>
 
             <DropdownMenu>
-              <DropdownMenuTrigger>
+              <DropdownMenuTrigger className="hidden md:block">
                 <Avatar>
                   <AvatarImage src="/avatar.png" alt="User" />
                   <AvatarFallback>US</AvatarFallback>
