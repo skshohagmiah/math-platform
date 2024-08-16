@@ -1,142 +1,185 @@
+import { ChartArea, Infinity, InfinityIcon, LucideMonitor, Sigma, Waves, X } from 'lucide-react';
+import { FaBook, FaCalculator, FaRulerCombined, FaDivide, FaPercent, FaShapes, FaChartBar, FaDice, FaTimes, FaCompass, FaTachometerAlt, FaCogs, FaPlus } from 'react-icons/fa';
+
 export const mathChapters = [
-    {
-      id: 1,
-      name: "Number Basics",
-      icon: "123",
-      description: "Introduction to numbers, counting, and basic operations",
-      difficulty: "Beginner"
-    },
-    {
-      id: 2,
-      name: "Shapes and Patterns",
-      icon: "Triangle",
-      description: "Explore geometric shapes and identify patterns",
-      difficulty: "Beginner"
-    },
-    {
-      id: 3,
-      name: "Addition and Subtraction",
-      icon: "Plus-Minus",
-      description: "Master the fundamentals of adding and subtracting numbers",
-      difficulty: "Beginner"
-    },
-    {
-      id: 4,
-      name: "Multiplication and Division",
-      icon: "X-Divide",
-      description: "Learn to multiply and divide with confidence",
-      difficulty: "Beginner-Intermediate"
-    },
-    {
-      id: 5,
-      name: "Fractions and Decimals",
-      icon: "Pie-Chart",
-      description: "Understand parts of a whole and decimal representation",
-      difficulty: "Intermediate"
-    },
-    {
-      id: 6,
-      name: "Percentages",
-      icon: "Percent",
-      description: "Convert between fractions, decimals, and percentages",
-      difficulty: "Intermediate"
-    },
-    {
-      id: 7,
-      name: "Algebra Basics",
-      icon: "Function",
-      description: "Introduction to variables and simple equations",
-      difficulty: "Intermediate"
-    },
-    {
-      id: 8,
-      name: "Geometry Fundamentals",
-      icon: "Shapes",
-      description: "Explore lines, angles, and 2D shapes in depth",
-      difficulty: "Intermediate"
-    },
-    {
-      id: 9,
-      name: "Data and Statistics",
-      icon: "Bar-Chart",
-      description: "Collect, analyze, and interpret data",
-      difficulty: "Intermediate"
-    },
-    {
-      id: 10,
-      name: "Probability",
-      icon: "Dice",
-      description: "Understand chance and predict outcomes",
-      difficulty: "Intermediate"
-    },
-    {
-      id: 11,
-      name: "Pre-Algebra",
-      icon: "X-Square",
-      description: "Bridge the gap between arithmetic and algebra",
-      difficulty: "Intermediate-Advanced"
-    },
-    {
-      id: 12,
-      name: "Algebra I",
-      icon: "Sigma",
-      description: "Solve complex equations and understand functions",
-      difficulty: "Advanced"
-    },
-    {
-      id: 13,
-      name: "Geometry",
-      icon: "Compass",
-      description: "Explore advanced geometric concepts and proofs",
-      difficulty: "Advanced"
-    },
-    {
-      id: 14,
-      name: "Trigonometry",
-      icon: "Sine-Wave",
-      description: "Study relationships between sides and angles of triangles",
-      difficulty: "Advanced"
-    },
-    {
-      id: 15,
-      name: "Algebra II",
-      icon: "Parabola",
-      description: "Dive deeper into functions, sequences, and series",
-      difficulty: "Advanced"
-    },
-    {
-      id: 16,
-      name: "Precalculus",
-      icon: "Limit",
-      description: "Prepare for calculus with advanced function analysis",
-      difficulty: "Advanced"
-    },
-    {
-      id: 17,
-      name: "Calculus I: Differentiation",
-      icon: "Tangent-Line",
-      description: "Learn about limits, continuity, and derivatives",
-      difficulty: "Expert"
-    },
-    {
-      id: 18,
-      name: "Calculus II: Integration",
-      icon: "Integral",
-      description: "Master integration techniques and applications",
-      difficulty: "Expert"
-    },
-    {
-      id: 19,
-      name: "Linear Algebra",
-      icon: "Matrix",
-      description: "Study vector spaces, matrices, and linear transformations",
-      difficulty: "Expert"
-    },
-    {
-      id: 20,
-      name: "Number Theory",
-      icon: "Prime",
-      description: "Explore properties of integers and prime numbers",
-      difficulty: "Expert"
-    }
-  ];
+  {
+    id: 1,
+    name: "Number Basics",
+    icon: <FaBook className="text-blue-500 w-12 h-12" />,
+    description: "Introduction to numbers, counting, and basic operations",
+    difficulty: "Beginner",
+    className: "bg-blue-100",
+    completed: true,
+  },
+  {
+    id: 2,
+    name: "Shapes and Patterns",
+    icon: <FaShapes className="text-green-500 w-12 h-12" />,
+    description: "Explore geometric shapes and identify patterns",
+    difficulty: "Beginner",
+    className: "bg-green-100",
+    completed: false,
+  },
+  {
+    id: 3,
+    name: "Addition and Subtraction",
+    icon: <FaPlus className="text-yellow-500 w-12 h-12" />,
+    description: "Master the fundamentals of adding and subtracting numbers",
+    difficulty: "Beginner",
+    className: "bg-yellow-100",
+    completed: false,
+  },
+  {
+    id: 4,
+    name: "Multiplication and Division",
+    icon: <FaDivide className="text-red-500 w-12 h-12" />,
+    description: "Learn to multiply and divide with confidence",
+    difficulty: "Beginner-Intermediate",
+    className: "bg-red-100",
+    completed: false,
+  },
+  {
+    id: 5,
+    name: "Fractions and Decimals",
+    icon: <ChartArea className="text-purple-500 w-12 h-12" />,
+    description: "Understand parts of a whole and decimal representation",
+    difficulty: "Intermediate",
+    className: "bg-purple-100",
+    completed: true,
+  },
+  {
+    id: 6,
+    name: "Percentages",
+    icon: <FaPercent className="text-teal-500 w-12 h-12" />,
+    description: "Convert between fractions, decimals, and percentages",
+    difficulty: "Intermediate",
+    className: "bg-teal-100",
+    completed: false,
+  },
+  {
+    id: 7,
+    name: "Algebra Basics",
+    icon: <X className="text-orange-500 w-12 h-12" />,
+    description: "Introduction to variables and simple equations",
+    difficulty: "Intermediate",
+    className: "bg-orange-100",
+    completed: false,
+  },
+  {
+    id: 8,
+    name: "Geometry Fundamentals",
+    icon: <FaCalculator className="text-pink-500 w-12 h-12" />,
+    description: "Explore lines, angles, and 2D shapes in depth",
+    difficulty: "Intermediate",
+    className: "bg-pink-100",
+    completed: false,
+  },
+  {
+    id: 9,
+    name: "Data and Statistics",
+    icon: <FaChartBar className="text-indigo-500 w-12 h-12" />,
+    description: "Collect, analyze, and interpret data",
+    difficulty: "Intermediate",
+    className: "bg-indigo-100",
+    completed: false,
+  },
+  {
+    id: 10,
+    name: "Probability",
+    icon: <FaDice className="text-gray-500 w-12 h-12" />,
+    description: "Understand chance and predict outcomes",
+    difficulty: "Intermediate",
+    className: "bg-gray-100",
+    completed: false,
+  },
+  {
+    id: 11,
+    name: "Pre-Algebra",
+    icon: <FaTimes className="text-cyan-500 w-12 h-12" />,
+    description: "Bridge the gap between arithmetic and algebra",
+    difficulty: "Intermediate-Advanced",
+    className: "bg-cyan-100",
+    completed: false,
+  },
+  {
+    id: 12,
+    name: "Algebra I",
+    icon: <Sigma className="text-teal-500 w-12 h-12" />,
+    description: "Solve complex equations and understand functions",
+    difficulty: "Advanced",
+    className: "bg-teal-100",
+    completed: false,
+  },
+  {
+    id: 13,
+    name: "Geometry",
+    icon: <FaCompass className="text-lime-500 w-12 h-12" />,
+    description: "Explore advanced geometric concepts and proofs",
+    difficulty: "Advanced",
+    className: "bg-lime-100",
+    completed: false,
+  },
+  {
+    id: 14,
+    name: "Trigonometry",
+    icon: <Waves className="text-rose-500 w-12 h-12" />,
+    description: "Study relationships between sides and angles of triangles",
+    difficulty: "Advanced",
+    className: "bg-rose-100",
+    completed: false,
+  },
+  {
+    id: 15,
+    name: "Algebra II",
+    icon: <X className="text-amber-500 w-12 h-12" />,
+    description: "Dive deeper into functions, sequences, and series",
+    difficulty: "Advanced",
+    className: "bg-amber-100",
+    completed: false,
+  },
+  {
+    id: 16,
+    name: "Precalculus",
+    icon: <LucideMonitor className="text-teal-600 w-12 h-12" />,
+    description: "Prepare for calculus with advanced function analysis",
+    difficulty: "Advanced",
+    className: "bg-teal-600",
+    completed: false,
+  },
+  {
+    id: 17,
+    name: "Calculus I: Differentiation",
+    icon: <FaTachometerAlt className="text-red-600 w-12 h-12" />,
+    description: "Learn about limits, continuity, and derivatives",
+    difficulty: "Expert",
+    className: "bg-red-100",
+    completed: false,
+  },
+  {
+    id: 18,
+    name: "Calculus II: Integration",
+    icon: <InfinityIcon className="text-blue-600 w-12 h-12" />,
+    description: "Master integration techniques and applications",
+    difficulty: "Expert",
+    className: "bg-blue-100",
+    completed: false,
+  },
+  {
+    id: 19,
+    name: "Linear Algebra",
+    icon: <X className="text-purple-600 w-12 h-12" />,
+    description: "Study vector spaces, matrices, and linear transformations",
+    difficulty: "Expert",
+    className: "bg-purple-100",
+    completed: false,
+  },
+  {
+    id: 20,
+    name: "Number Theory",
+    icon: <FaCogs className="text-orange-600 w-12 h-12" />,
+    description: "Explore properties of integers and prime numbers",
+    difficulty: "Expert",
+    className: "bg-orange-100",
+    completed: false,
+  }
+];

@@ -1,3 +1,5 @@
+import NumberBasicsChapter from "@/components/Math/chapters/NumberLessons";
+import IntroductionToNumbers from "@/components/Math/IntroductionToNumber";
 import { Card } from "@/components/ui/card";
 import { Construction } from "lucide-react";
 import React from "react";
@@ -5,9 +7,11 @@ import React from "react";
 const ChapterPage = ({ params }: { params: { chapter: string } }) => {
   const chapter = params.chapter;
 
+  console.log(chapter)
+
   switch (chapter) {
-    case "name":
-      return <div>Showing chapter</div>;
+    case "Number%20Basics":
+      return <NumberBasicsChapter />;
 
     default:
       return (

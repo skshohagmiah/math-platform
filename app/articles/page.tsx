@@ -64,8 +64,8 @@ const ArticlesPage: React.FC = () => {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-8 text-center">Math Insights: Articles</h1>
+    <div className="max-w-screen-xl mx-auto px-4 py-8">
+      <h1 className="text-2xl lg:text-4xl font-bold mb-8 text-center">Math Insights: Articles</h1>
       
       <div className="flex flex-col md:flex-row gap-8">
         {/* Main Content */}

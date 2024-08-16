@@ -55,7 +55,7 @@ const ArticleSection: React.FC = () => {
     <section className="py-20 container mx-auto px-4">
       <div className="">
         <h2 className="text-3xl font-bold mb-8 text-center">
-          Math Insights: Featured Articles
+         <span className="text-green-500 font-extrabold"> Math Insights:</span> Featured Articles
         </h2>
 
         {/* Featured Articles */}
@@ -95,7 +95,7 @@ const ArticleSection: React.FC = () => {
         <div className="text-center mt-12">
           <Button size="lg">
             View All Articles
-            <ArrowRight className="ml-2 w-5 h-5" />
+            <ArrowRight className="ml-2 w-5 h-5 animate-pulse" />
           </Button>
         </div>
       </div>

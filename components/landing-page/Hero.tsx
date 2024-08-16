@@ -6,6 +6,7 @@ import { Trophy, Star, TrendingUp, ChevronRight } from 'lucide-react';
 import { Card } from '../ui/card';
 import MathLesson from './MathExample';
 import DailyMathChallenge from './DailyMathChallange';
+import SignInModal from '../auth/SignInModel';
 
 export default function Hero() {
   const [answer, setAnswer] = useState('');
@@ -28,12 +29,10 @@ export default function Hero() {
               Unleash Your <span className='text-green-500'>Math</span> Potential
             </h1>
             <p className="text-xl mb-8 opacity-90">
-              Embark on an exciting journey of interactive math learning. 
+              Embark on an exciting journey of <span className='text-green-700'>interactive math learning</span>. 
               Challenge yourself, earn rewards, and watch your skills soar!
             </p>
-            <Button size="lg" className=" transition duration-300 rounded-full border-b-4 py-6">
-              Start Your Adventure <ChevronRight className="ml-2" />
-            </Button>
+              <SignInModal />
             <small className='block text-muted-foreground p-2'>Sign up for free forever to get rewards, improve level and to appear on the leaderboard</small>
           </div>
           <DailyMathChallenge />
