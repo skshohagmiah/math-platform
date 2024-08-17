@@ -31,7 +31,7 @@ const IntroductionToNumbers: React.FC = () => {
     { id: "3", number: 2 },
     { id: "4", number: 4 },
   ]);
-  const [droppedItems, setDroppedItems] = useState<DroppedItem[]>([]);
+  const [droppedItems, setDroppedItems] = useState<any[]>([]);
   const [feedback, setFeedback] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [score, setScore] = useState(0);

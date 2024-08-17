@@ -12,7 +12,6 @@ const ChapterPage = ({ params }: { params: { chapter: string } }) => {
   switch (chapter) {
     case "Number%20Basics":
       return <NumberBasicsChapter />;
-
     default:
       return (
         <div className="min-h-screen min-w-full flex items-center justify-center">
