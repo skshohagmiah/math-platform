@@ -34,7 +34,7 @@ const FeedbackForm: React.FC = () => {
       <CardContent className="my-6">
         {!submitted ? (
           <div className="space-y-6">
-            <div className="flex flex-col md:flex-row md:space-x-6">
+            <div className="flex flex-col gap-2 md:flex-row md:space-x-6">
               <Input
                 type="text"
                 placeholder="Your Name"
@@ -49,7 +49,7 @@ const FeedbackForm: React.FC = () => {
                 className="w-full md:w-2/3 p-4 border border-gray-300 rounded-lg shadow-sm"
               />
             </div>
-            <div  className="flex items-center justify-between">
+            <div  className="flex items-center flex-col-reverse gap-2 md:flex-row justify-between">
               <p className="text-sm text-gray-500">
                 Your feedback helps us improve our platform. We appreciate your
                 input!

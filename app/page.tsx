@@ -10,7 +10,7 @@ import FeedbackForm from "@/components/landing-page/Feedback";
 
 export default function Home() {
   return (
-      <main className="max-w-screen-xl mx-auto">
+      <main className="">
         <Hero />
         <hr />
         <Features />
