@@ -5,12 +5,18 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import {
   Bell,
+  Bold,
+  BoldIcon,
+  Bolt,
   Book,
   Crown,
   Diamond,
+  FlipHorizontal,
   Group,
+  Haze,
   Menu,
   Power,
+  PowerIcon,
   Text,
 } from "lucide-react";
 import {
@@ -22,6 +28,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import MobileHeader from "./MobileHeader";
+import { FcElectricalSensor, FcElectricalThreshold, FcElectricity } from "react-icons/fc";
+import { FiPower } from "react-icons/fi";
 
 export default function Header() {
   return (
@@ -33,8 +41,8 @@ export default function Header() {
               href="/"
               className="md:text-2xl font-bold text-green-600 flex items-center"
             >
-              <Crown className="mr-2" />
-              MathMaster
+              <Crown className="mr-2" size={40}/>
+              Math <span className="text-blue-500">Tutor</span>
             </Link>
 
             <nav className="hidden md:flex items-start space-x-6 ml-6">
@@ -52,23 +60,22 @@ export default function Header() {
                 <Text />
                 Articles
               </Link>
+              <Link
+                href="/test"
+                className="text-gray-600 hover:text-blue-600 transition-colors flex gap-2 items-center"
+              >
+                <Text />
+                Test
+              </Link>
             </nav>
           </div>
 
           <div className="flex items-center space-x-2 md:space-x-4">
             <Badge
-              variant="secondary"
-              className="items-center flex gap-1 md:py-2 md:px-4 text-base font-semibold "
-            >
-              <Crown className="w-6 h-6  text-blue-500" />
-              <span className="hidden sm:block">Level</span> 5
-            </Badge>
-
-            <Badge
               variant={"secondary"}
-              className="flex items-center gap-1 text-base  md:py-1.5 md:px-3"
+              className="flex items-center gap-1 text-base  md:py-1.5 md:px-3 bg-gradient-to-r from-green-500 to-blue-500 text-white"
             >
-              💎
+              <FcElectricity size={30} className="text-white" />
               <span>3</span>
             </Badge>
 

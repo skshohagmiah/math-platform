@@ -35,9 +35,9 @@ const SignInModal: React.FC = () => {
             <Button
               size="lg"
               onClick={handleGoogleSignIn}
-              className="w-full flex items-center justify-center bg-green-800 text-white font-semibold text-lg border rounded-full py-8 shadow-md hover:shadow-lg transition-all duration-300"
+              className="w-full flex items-center justify-center bg-green-800 text-white font-semibold text-lg border rounded-full py-6 shadow-md hover:shadow-lg transition-all duration-300"
             >
-              <FcGoogle className="mr-2 text-2xl" size={50} />
+              <FcGoogle className="mr-2 text-2xl" size={30} />
               Sign in with Google
             </Button>
           </div>
