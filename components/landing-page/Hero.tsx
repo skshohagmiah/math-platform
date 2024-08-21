@@ -21,8 +21,8 @@ export default function Hero() {
   };
 
   return (
-    <section className="py-20 ">
-      <div className="container mx-auto px-4">
+    <section className="py-20  ">
+      <div className="max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 place-content-center">
           <div className=" mb-10 lg:mb-0 text-center md:text-left">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">

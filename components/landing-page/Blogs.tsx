@@ -52,7 +52,7 @@ const articles = [
 
 const ArticleSection: React.FC = () => {
   return (
-    <section className="py-20 container mx-auto px-4">
+    <section className="py-20 max-w-screen-xl mx-auto px-4">
       <div className="">
         <h2 className="text-3xl font-bold mb-8 text-center">
          <span className="text-green-500 font-extrabold"> Math Insights:</span> Featured Articles

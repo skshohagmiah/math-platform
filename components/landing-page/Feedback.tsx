@@ -25,7 +25,7 @@ const FeedbackForm: React.FC = () => {
   };
 
   return (
-    <Card className="max-w-screen-lg mx-auto p-10 shadow-2xl my-16 rounded-lg bg-white">
+    <Card className="max-w-screen-lg mx-auto p-4 lg:p-10 shadow-2xl my-16 rounded-lg bg-white">
       <CardHeader className="text-center">
         <CardTitle className="text-2xl lg:text-4xl font-bold text-gray-800">
           We Value <span className="text-green-500 font-extrabold">Your Feedback</span>
