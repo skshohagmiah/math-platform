@@ -25,13 +25,13 @@ const FeedbackForm: React.FC = () => {
   };
 
   return (
-    <Card className="max-w-screen-lg mx-auto p-4 lg:p-10 shadow-2xl my-16 rounded-lg bg-white">
+    <Card className="max-w-screen-lg mx-auto p-4 shadow-2xl my-16 rounded-lg bg-white">
       <CardHeader className="text-center">
-        <CardTitle className="text-2xl lg:text-4xl font-bold text-gray-800">
+        <CardTitle className="text-2xl lg:text-3xl font-bold text-gray-800">
           We Value <span className="text-green-500 font-extrabold">Your Feedback</span>
         </CardTitle>
       </CardHeader>
-      <CardContent className="my-6">
+      <CardContent className="my-4">
         {!submitted ? (
           <div className="space-y-6">
             <div className="flex flex-col gap-2 md:flex-row md:space-x-6">
@@ -40,7 +40,7 @@ const FeedbackForm: React.FC = () => {
                 placeholder="Your Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full md:w-1/2 p-4 border border-gray-300 rounded-lg shadow-sm"
+                className="w-full md:w-1/3 p-4 border border-gray-300 rounded-lg shadow-sm"
               />
               <Input
                 placeholder="Your Message"

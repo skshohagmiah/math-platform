@@ -14,6 +14,7 @@ import {
   FlipHorizontal,
   Group,
   Haze,
+  Heart,
   Menu,
   Power,
   PowerIcon,
@@ -47,7 +48,7 @@ export default function Header() {
 
             <nav className="hidden md:flex items-start space-x-6 ml-6">
               <Link
-                href="#chapters"
+                href="/chapters"
                 className="text-gray-600 hover:text-blue-600 transition-colors flex items-center gap-2"
               >
                 <Book />
@@ -73,15 +74,15 @@ export default function Header() {
           <div className="flex items-center space-x-2 md:space-x-4">
             <Badge
               variant={"secondary"}
-              className="flex items-center gap-1 text-base  md:py-1.5 md:px-3 bg-gradient-to-r from-green-500 to-blue-500 text-white"
+              className="flex items-center gap-1 text-base  md:py-1.5 md:px-3 bg-green-400 hover:bg-blue-400 text-white"
             >
-              <FcElectricity size={30} className="text-white" />
+              <Heart size={25} className="fill-rose-600 text-rose-600" />
               <span>3</span>
             </Badge>
 
             <DropdownMenu>
               <DropdownMenuTrigger className="hidden md:block">
-                <Avatar>
+                <Avatar className="border-2 border-green-500">
                   <AvatarImage src="/avatar.png" alt="User" />
                   <AvatarFallback>US</AvatarFallback>
                 </Avatar>

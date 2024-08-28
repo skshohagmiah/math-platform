@@ -289,17 +289,12 @@ const IntroductionToNumbers: React.FC = () => {
           </Button>
         </CardFooter>
       </Card>
-      <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-        <DialogContent>
+      <Dialog open={isModalOpen} onOpenChange={setIsModalOpen} >
+        <DialogContent className="flex items-center justify-center flex-col gap-4">
           <DialogHeader>
             <DialogTitle>Lesson Video</DialogTitle>
           </DialogHeader>
-          <iframe
-            src="https://www.youtube.com/embed/D9qHHIwB4HY"
-            title="Lesson Video"
-            className="w-full h-64 rounded-lg"
-            allowFullScreen
-          />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/crSGS1uBSNQ?si=24DsxXPRkobFruJg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
         </DialogContent>
       </Dialog>
     </section>

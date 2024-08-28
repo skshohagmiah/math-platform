@@ -105,7 +105,7 @@ export default function DailyMathChallenge() {
 
   return (
     <>
-      <Card className="  p-6 rounded-xl shadow-lg">
+      <Card className="  p-6 rounded-xl shadow-lg border-2 border-green-600 ">
         {showConfetti && <ConfettiExplosion />}
         <h2 className="text-2xl font-bold mb-6 text-gray-800">
           Today Math Challenge
