@@ -1,4 +1,4 @@
-// components/Header.tsx
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -32,7 +32,15 @@ import MobileHeader from "./MobileHeader";
 import { FcElectricalSensor, FcElectricalThreshold, FcElectricity } from "react-icons/fc";
 import { FiPower } from "react-icons/fi";
 
-export default function Header() {
+
+interface User {
+  name?:string | undefined | null;
+  email ?: string | undefined | null;
+  id?:string | undefined | null;
+  image ?: string | undefined | null
+}
+
+export default function Header({user}:{user:User}) {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className=" px-4 py-3 max-w-screen-xl mx-auto">
@@ -81,10 +89,10 @@ export default function Header() {
             </Badge>
 
             <DropdownMenu>
-              <DropdownMenuTrigger className="hidden md:block">
-                <Avatar className="border-2 border-green-500">
-                  <AvatarImage src="/avatar.png" alt="User" />
-                  <AvatarFallback>US</AvatarFallback>
+              <DropdownMenuTrigger className="hidden md:block outline-none">
+                <Avatar className="border-2 border-green-500 focus:no-underline outline-none">
+                  <AvatarImage src={user?.image ? user.image : "/avatar.png"} alt="User" />
+                  <AvatarFallback>{user?.name ? user.name : 'US'}</AvatarFallback>
                 </Avatar>
               </DropdownMenuTrigger>
               <DropdownMenuContent>

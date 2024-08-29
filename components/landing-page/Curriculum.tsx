@@ -5,8 +5,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Circle } from "lucide-react";
 import { mathChapters } from "@/data/MathChapters";
 import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 const MathCurriculum: React.FC = () => {
+
+  const router = useRouter()
+
   return (
     <section className="min-h-screen  bg-gray-50 py-16">
       <div className="max-w-screen-xl mx-auto px-4">
@@ -16,6 +20,7 @@ const MathCurriculum: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {mathChapters.slice(0,6).map((chapter) => (
             <Card
+              onClick={() => router.push(`/chapters/${chapter.name}`)}
               key={chapter.id}
               className={`relative ${chapter.className} shadow-lg hover:shadow-xl transition-shadow duration-200`}
             >
@@ -37,7 +42,7 @@ const MathCurriculum: React.FC = () => {
           ))}
         </div>
         <div className="text-center mt-12">
-          <Button size="lg">
+          <Button size="lg" onClick={() => router.push('/chapters')}>
             View All Chapters
             <ArrowRight className="ml-2 w-5 h-5 animate-pulse" />
           </Button>

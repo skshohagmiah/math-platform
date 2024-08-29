@@ -4,6 +4,7 @@ import React from "react";
 import { CheckCircle, Circle } from "lucide-react"; // Icons for completion status
 import { FaBook, FaCalculator, FaRulerCombined } from "react-icons/fa"; // Example icons for lessons
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useParams, useRouter } from "next/navigation";
 
 const numberBasicsLessons = [
   {
@@ -31,6 +32,10 @@ const numberBasicsLessons = [
 ];
 
 const NumberBasicsChapter: React.FC = () => {
+
+  const router = useRouter()
+  const params = useParams();
+
   return (
     <section className="min-h-screen p-8 bg-gray-50">
       <h1 className="text-4xl font-bold text-center mb-12">Number Basics</h1>
@@ -39,6 +44,7 @@ const NumberBasicsChapter: React.FC = () => {
           <Card
             key={lesson.id}
             className="relative bg-white shadow-lg hover:shadow-xl transition-shadow duration-200"
+            onClick={() => router.push(`/chapters/${params.chapter}/${lesson.title}`)}
           >
             <CardHeader className="flex items-center">
               {lesson.icon}

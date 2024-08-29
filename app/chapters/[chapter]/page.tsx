@@ -19,7 +19,7 @@ const ChapterPage = ({ params }: { params: { chapter: string } }) => {
             <div className="bg-green-500 p-4 rounded-full">
               <Construction size={40}/>
             </div>
-            <h2 className="text-3xl font-semibold text-rose-500 capitalize">This page is under Construction</h2>
+            <h2 className="lg:text-xl font-semibold text-rose-500 capitalize lg:px-10">This page is under Construction</h2>
             <p>The content will be available soon</p>
           </Card>
         </div>

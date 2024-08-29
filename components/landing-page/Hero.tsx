@@ -8,7 +8,7 @@ import MathLesson from './MathExample';
 import DailyMathChallenge from './DailyMathChallange';
 import SignInModal from '../auth/SignInModel';
 
-export default function Hero() {
+export default function Hero({isAuthenticated}:{isAuthenticated:boolean}) {
   const [answer, setAnswer] = useState('');
   const [feedback, setFeedback] = useState('');
 
@@ -32,7 +32,13 @@ export default function Hero() {
               Embark on an exciting journey of <span className='text-green-700'>interactive math learning</span>. 
               Challenge yourself, earn rewards, and watch your skills soar!
             </p>
-              <SignInModal />
+              {
+                isAuthenticated ? (
+                  <Button className='rounded-full px-10 py-6 border-b-4 text-lg'>Start Your Chapter</Button>
+                ):(
+                  <SignInModal />
+                )
+              }
             <small className='block text-muted-foreground p-2'>Sign up for free forever to get rewards, improve level and to appear on the leaderboard</small>
           </div>
           <DailyMathChallenge />
